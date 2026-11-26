@@ -21,7 +21,7 @@ A focused security awareness reference covering four high-priority entries from 
 
 ### What is it?
 
-Prompt injection occurs when user-supplied or externally sourced input manipulates an LLM into behaving in unintended ways — overriding developer instructions, bypassing safety controls, or causing the model to perform actions it was not designed to.
+Prompt injection occurs when user-supplied or externally sourced input manipulates an LLM into behaving in unintended ways - overriding developer instructions, bypassing safety controls, or causing the model to perform actions it was not designed to.
 
 There are two forms:
 
@@ -58,7 +58,7 @@ There are two forms:
 
 ### What is it?
 
-Sensitive Information Disclosure occurs when an LLM reveals confidential data through its outputs — either because that data was present in its training set, its context window, or the retrieval sources it has access to. The disclosed data can include:
+Sensitive Information Disclosure occurs when an LLM reveals confidential data through its outputs - either because that data was present in its training set, its context window, or the retrieval sources it has access to. The disclosed data can include:
 
 - Personally Identifiable Information (PII) - names, addresses, national ID numbers, financial records
 - Proprietary business information - algorithms, internal processes, trade secrets
@@ -179,7 +179,7 @@ The consequences extend beyond factual error into security risk: fabricated code
 
 
 
-## MITRE ATLAS — AI Adversary Techniques
+## MITRE ATLAS - AI Adversary Techniques
 
 [MITRE ATLAS](https://atlas.mitre.org) (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics and techniques targeting AI-enabled systems. It mirrors the structure of ATT&CK — tactics describe the *why*, techniques describe the *how*.
 
@@ -215,7 +215,7 @@ An attacker harvests a CFO's voice from a public earnings call. They place a cal
 
 **Mitigations:**
 - **User Training** (`AML.M0018`) - educate staff on AI-generated phishing; promote verbal verification via known numbers before acting on unusual requests
-- **Deepfake Detection** (`AML.M0034`)-— deploy detection tooling on inbound media channels; apply to conference call recordings and voicemail
+- **Deepfake Detection** (`AML.M0034`) - deploy detection tooling on inbound media channels; apply to conference call recordings and voicemail
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -299,7 +299,7 @@ Adversaries rely on a user to load, run, or interact with a malicious or unsafe 
 
 - **Poisoned AI Agent Tool** - a tool or plugin available to an AI agent has been tampered with. When the agent invokes it, the poisoned tool exposes the agent to malicious instructions, executes harmful logic, or chains additional tool calls under attacker control. Introduced via supply chain compromise of AI agent tools.
 
-- **Malicious Link** — users are socially engineered into clicking a link that leads to code execution, exploitation, or further compromise. AI agents misconfigured to follow links without validating origin headers can be exploited similarly.
+- **Malicious Link** - users are socially engineered into clicking a link that leads to code execution, exploitation, or further compromise. AI agents misconfigured to follow links without validating origin headers can be exploited similarly.
 
 **Procedure example:**
 A developer asks an AI coding assistant to recommend a Python library for processing AI model outputs. The assistant suggests a package that doesn't exist on PyPI. An attacker has already registered that exact package name and published a version that installs a reverse shell alongside the expected functionality. The developer installs it, and the attacker gains a foothold on the development machine.
